@@ -5,8 +5,8 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:SolarSystem"
         mc:Ignorable="d"
-        Title="MainWindow" MinHeight="550" MinWidth="950"
-        Height="570" Width="970"
+        Title="MainWindow" MinHeight="700" MinWidth="950"
+        Height="770" Width="1190"
         Icon="Images/Icons/favicon.ico" WindowStartupLocation="CenterScreen">
     <Grid>
         <Grid.ColumnDefinitions>
@@ -22,47 +22,63 @@
             <ColumnDefinition Width="44*"/>
         </Grid.ColumnDefinitions>
         <Grid.RowDefinitions>
-            <RowDefinition Height="248*"/>
-            <RowDefinition Height="109*"/>
-            <RowDefinition Height="114*"/>
+            <RowDefinition Height="238*"/>
+            <RowDefinition Height="80*"/>
+            <RowDefinition Height="134*"/>
             <RowDefinition Height="50*"/>
         </Grid.RowDefinitions>
 
         <StackPanel Grid.Column="8" Grid.Row="1" Grid.ColumnSpan="2"
                     VerticalAlignment="Top" HorizontalAlignment="Center">
-            <Button Content="Сонце"/>
+            <Button Style="{DynamicResource PlannetButtons}" Content="Сонце"/>
         </StackPanel>
         <StackPanel Grid.Column="1" Grid.Row="2" 
                     VerticalAlignment="Top" HorizontalAlignment="Left">
-            <Button Content="Нептун"/>
+            <Button Style="{DynamicResource PlannetButtons}" Content="Нептун"/>
+            <Button Style="{DynamicResource SatelliteButtons}"  Content="Тритон"/>
+            <Button Style="{DynamicResource SatelliteButtons}" Content="Неріада"/>
+            <Button Style="{DynamicResource SatelliteButtons}" Content="Протей"/>
         </StackPanel>
         <StackPanel Grid.Column="2" Grid.Row="2" 
                     VerticalAlignment="Top" HorizontalAlignment="Left">
-            <Button Content="Уран"/>
+            <Button Style="{DynamicResource PlannetButtons}" Content="Уран"/>
+            <Button Style="{DynamicResource SatelliteButtons}"  Content="Міранда"/>
+            <Button Style="{DynamicResource SatelliteButtons}"  Content="Аліель"/>
+            <Button Style="{DynamicResource SatelliteButtons}" Content="Титан"/>
         </StackPanel>
         <StackPanel Grid.Column="3" Grid.Row="2" 
                     VerticalAlignment="Top" HorizontalAlignment="Left">
-            <Button Content="Сатурн"/>
+            <Button Style="{DynamicResource PlannetButtons}"  Content="Сатурн"/>
+            <Button Style="{DynamicResource SatelliteButtons}" Content="Титан"/>
+            <Button Style="{DynamicResource SatelliteButtons}" Content="Рея"/>
+            <Button Style="{DynamicResource SatelliteButtons}" Content="Енцелад"/>
         </StackPanel>
         <StackPanel Grid.Column="4" Grid.Row="2" 
                     VerticalAlignment="Top" HorizontalAlignment="Left">
-            <Button Content="Юпітер"/>
+            <Button Style="{DynamicResource PlannetButtons}" Content="Юпітер"/>
+            <Button Style="{DynamicResource SatelliteButtons}" Content="Іо"/>
+            <Button Style="{DynamicResource SatelliteButtons}" Content="Європа"/>
+            <Button Style="{DynamicResource SatelliteButtons}" Content="Ганімед"/>
+            <Button Style="{DynamicResource SatelliteButtons}" Content="Калісто"/>
         </StackPanel>
         <StackPanel Grid.Column="5" Grid.Row="2" Grid.ColumnSpan="2"
                     VerticalAlignment="Top" HorizontalAlignment="Left">
-            <Button Content="Марс"/>
+            <Button Style="{DynamicResource PlannetButtons}" Content="Марс"/>
+            <Button Style="{DynamicResource SatelliteButtons}" Content="Фобос"/>
+            <Button Style="{DynamicResource SatelliteButtons}" Content="Деймос"/>
         </StackPanel>
         <StackPanel Grid.Column="6" Grid.Row="2" Grid.ColumnSpan="2"
                     VerticalAlignment="Center" HorizontalAlignment="Left">
-            <Button Content="Земля"/>
+            <Button Style="{DynamicResource PlannetButtons}" Content="Земля"/>
+            <Button Style="{DynamicResource SatelliteButtons}" Content="Місяць"/>
         </StackPanel>
         <StackPanel Grid.Column="7" Grid.Row="2" Grid.ColumnSpan="2"
                     VerticalAlignment="Top" HorizontalAlignment="Left">
-            <Button Content="Венера"/>
+            <Button Style="{DynamicResource PlannetButtons}" Content="Венера"/>
         </StackPanel>
         <StackPanel Grid.Column="8" Grid.Row="2" Grid.ColumnSpan="2"
                     VerticalAlignment="Center" HorizontalAlignment="Left">
-            <Button Content="Меркурій"/>
+            <Button Style="{DynamicResource PlannetButtons}" Content="Меркурій"/>
         </StackPanel>
     </Grid>
 </Window>
