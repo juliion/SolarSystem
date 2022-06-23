@@ -98,7 +98,6 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup />
   <ItemGroup>
     <Resource Include="Images\Backgrounds\mainBackground.jpg" />
   </ItemGroup>
