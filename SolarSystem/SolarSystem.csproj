@@ -55,7 +55,31 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
-    <Page Include="MainWindow.xaml">
+    <Page Include="Resources\AboutPlanetStyle.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Resources\AboutSatelliteStyle.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Resources\AboutStarStyle.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\AboutPlanet.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\AboutSatellite.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\AboutStar.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
@@ -63,7 +87,16 @@
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="MainWindow.xaml.cs">
+    <Compile Include="Views\AboutPlanet.xaml.cs">
+      <DependentUpon>AboutPlanet.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\AboutSatellite.xaml.cs">
+      <DependentUpon>AboutSatellite.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\AboutStar.xaml.cs">
+      <DependentUpon>AboutStar.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\MainWindow.xaml.cs">
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
@@ -103,6 +136,16 @@
   </ItemGroup>
   <ItemGroup>
     <Resource Include="Images\Icons\favicon.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\Backgrounds\aboutPlanetBackgr.jpg" />
+    <Resource Include="Images\Backgrounds\aboutSatelliteBackgr.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\test.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\Backgrounds\aboutStarBackgr.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

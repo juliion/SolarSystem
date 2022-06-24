@@ -1,4 +1,4 @@
-﻿<Window x:Class="SolarSystem.MainWindow"
+﻿<Window x:Class="SolarSystem.Views.MainWindow"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
@@ -7,8 +7,8 @@
         mc:Ignorable="d"
         Title="Путівник Сонячною системою" MinHeight="700" MinWidth="950"
         Height="770" Width="1190"
-        Icon="Images/Icons/favicon.ico" WindowStartupLocation="CenterScreen">
-    <Grid>
+        Icon="../Images/Icons/favicon.ico" WindowStartupLocation="CenterScreen">
+    <Grid Style="{StaticResource MainWindowGrid}">
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="39*"/>
             <ColumnDefinition Width="107*"/>

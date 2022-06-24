@@ -1,0 +1,27 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+    <Style x:Key="AboutSatelliteGrid" TargetType="Grid">
+        <Setter Property="Background">
+            <Setter.Value>
+                <ImageBrush ImageSource="../Images/Backgrounds/aboutSatelliteBackgr.jpg"/>
+            </Setter.Value>
+        </Setter>
+    </Style>
+    <Style x:Key="MainBorderSatellite" TargetType="Border">
+        <Setter Property="Background" Value="#be483d8b"/>
+        <Setter Property="Padding" Value="10"/>
+        <Setter Property="CornerRadius" Value="17"/>
+    </Style>
+    <Style x:Key="TextBlockBorderSatellite" TargetType="Border">
+        <Setter Property="Background" Value="#ff2e2662"/>
+        <Setter Property="Padding" Value="10"/>
+        <Setter Property="HorizontalAlignment" Value="Left"/>
+        <Setter Property="CornerRadius" Value="7"/>
+        <Setter Property="Margin" Value="50, 0, 0, 5"/>
+    </Style>
+    <Style x:Key="TextBlockSatellite" TargetType="TextBlock">
+        <Setter Property="FontWeight" Value="Bold"/>
+        <Setter Property="Foreground" Value="White"/>
+        <Setter Property="FontFamily" Value="Franklin Gothic Medium"/>
+    </Style>
+</ResourceDictionary>

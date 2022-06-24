@@ -1,0 +1,45 @@
+﻿<Window x:Class="SolarSystem.Views.AboutPlanet"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:SolarSystem.Views"
+        mc:Ignorable="d"
+        Title="Про планету" MinHeight="700" MinWidth="950"
+        Height="770" Width="1190"
+        Icon="../Images/Icons/favicon.ico" WindowStartupLocation="CenterScreen">
+    <Grid Style="{StaticResource AboutPlanetGrid}">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="207*"/>
+            <ColumnDefinition Width="619*"/>
+            <ColumnDefinition Width="358*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="137*"/>
+            <RowDefinition Height="507*"/>
+            <RowDefinition Height="96*"/>
+        </Grid.RowDefinitions>
+        <Border Style="{StaticResource MainBorderPlanet}" Grid.Row="1" Grid.Column="1">
+            <StackPanel>
+                <Border Style="{StaticResource TextBlockBorderPlanet}">
+                    <TextBlock Style="{StaticResource TextBlockPlanet}" Text="Планета"/>
+                </Border>
+                <Image Source="../Images/test.jpg"
+                       Width="500" Height="270" Margin="4"/>
+                <Border Style="{StaticResource TextBlockBorderPlanet}">
+                    <TextBlock Style="{StaticResource TextBlockPlanet}" Text="Відстань від Сонця:"/>
+                </Border>
+                <Border Style="{StaticResource TextBlockBorderPlanet}">
+                    <TextBlock Style="{StaticResource TextBlockPlanet}" Text="Діаметр:"/>
+                </Border>
+                <Border Style="{StaticResource TextBlockBorderPlanet}">
+                    <TextBlock Style="{StaticResource TextBlockPlanet}" Text="Тривалість року:"/>
+                </Border>
+                <Border Style="{StaticResource TextBlockBorderPlanet}">
+                    <TextBlock Style="{StaticResource TextBlockPlanet}" Text="Тривалість доби:"/>
+                </Border>
+            </StackPanel>
+        </Border>
+        
+    </Grid>
+</Window>
