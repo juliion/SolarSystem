@@ -32,7 +32,7 @@ namespace SolarSystem.ViewModel
         {
             _context = new SolarSystemContext();
             Planets = new ObservableCollection<Planet>();
-            foreach (var planet in _context.Planets)
+            foreach (var planet in _context.Planets.OrderByDescending(p => p.Id))
             {
                 Planets.Add(planet);
             }

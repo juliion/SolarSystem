@@ -19,22 +19,13 @@
             <RowDefinition Height="47*"/>
             <RowDefinition Height="134*"/>
         </Grid.RowDefinitions>
-        <Menu Style="{StaticResource PlanetsMenu}" Grid.Row="1" Grid.Column="1">
-            <MenuItem Header="Нетпун">
-            </MenuItem>
-            <MenuItem Header="Уран">
-            </MenuItem>
-            <MenuItem Header="Сатурн">
-            </MenuItem>
-            <MenuItem Header="Юпітер">
-            </MenuItem>
-            <MenuItem Header="Марс">
-            </MenuItem>
-            <MenuItem Header="Земля">
-            </MenuItem>
-            <MenuItem Header="Венера"/>
-            <MenuItem Header="Меркурій"/>
-            <MenuItem Header="Сонце"/>
+        <Menu Style="{StaticResource PlanetsMenu}" Grid.Row="1" Grid.Column="1"
+              ItemsSource="{Binding PlanetsVM.Planets}">
+            <Menu.ItemTemplate>
+                <HierarchicalDataTemplate  ItemsSource="{Binding Path=PlanetsVM.Planets}">
+                    <TextBlock Text="{Binding Name}"/>
+                </HierarchicalDataTemplate>
+            </Menu.ItemTemplate>
         </Menu>
     </Grid>
 </Window>
