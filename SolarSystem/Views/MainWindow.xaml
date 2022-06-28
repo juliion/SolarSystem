@@ -15,11 +15,21 @@
             <ColumnDefinition Width="92*"/>
         </Grid.ColumnDefinitions>
         <Grid.RowDefinitions>
-            <RowDefinition Height="559*"/>
+            <RowDefinition Height="147*"/>
             <RowDefinition Height="47*"/>
-            <RowDefinition Height="134*"/>
+            <RowDefinition Height="459*"/>
+            <RowDefinition Height="50*"/>
+            <RowDefinition Height="174*"/>
         </Grid.RowDefinitions>
-        <Menu Style="{StaticResource PlanetsMenu}" Grid.Row="1" Grid.Column="1"
+         <Menu Style="{StaticResource StarsMenu}" Grid.Row="1" Grid.Column="1"
+              ItemsSource="{Binding StarsVM.Stars}">
+            <Menu.ItemTemplate>
+                <HierarchicalDataTemplate  ItemsSource="{Binding Path=StarsVM.Stars}">
+                    <TextBlock Text="{Binding Name}"/>
+                </HierarchicalDataTemplate>
+            </Menu.ItemTemplate>
+        </Menu>
+        <Menu Style="{StaticResource PlanetsMenu}" Grid.Row="3" Grid.Column="1"
               ItemsSource="{Binding PlanetsVM.Planets}">
             <Menu.ItemTemplate>
                 <HierarchicalDataTemplate  ItemsSource="{Binding Path=PlanetsVM.Planets}">

@@ -21,6 +21,20 @@
             </Setter.Value>
         </Setter>
     </Style>
+    <Style x:Key="StarsMenu" TargetType="Menu">
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate>
+                    <Border BorderBrush="White"  BorderThickness="2" CornerRadius="30"
+                            Background="#AAAAAAAA" Padding="3" Width="150">
+                        <StackPanel ClipToBounds="True" Orientation="Horizontal"
+                                    HorizontalAlignment="Center" VerticalAlignment="Center"
+                                    IsItemsHost="True"/>
+                    </Border>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
     <ControlTemplate x:Key="MenuItemControlTemplate1" TargetType="{x:Type MenuItem}">
         <Border x:Name="templateRoot" BorderBrush="{TemplateBinding BorderBrush}" BorderThickness="{TemplateBinding BorderThickness}" Background="{TemplateBinding Background}"
                 SnapsToDevicePixels="True" CornerRadius="20" Padding="4">
