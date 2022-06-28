@@ -211,6 +211,29 @@
   <ItemGroup>
     <Resource Include="Images\MercuryPhoto.jpg" />
   </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\ArielPhoto.jpg" />
+    <Resource Include="Images\DeimosPhoto.jpg" />
+    <Resource Include="Images\EarthPhoto.jpg" />
+    <Resource Include="Images\EnceladusPhoto.jpg" />
+    <Resource Include="Images\EuropePhoto.jpg" />
+    <Resource Include="Images\GanymedePhoto.jpg" />
+    <Resource Include="Images\JupiterPhoto.jpg" />
+    <Resource Include="Images\MarsPhoto.jpg" />
+    <Resource Include="Images\MirandaPhoto.jpg" />
+    <Resource Include="Images\MoonPhoto.jpg" />
+    <Resource Include="Images\NeptunePhoto.jpg" />
+    <Resource Include="Images\NereidPhoto.jpg" />
+    <Resource Include="Images\PhobosPhoto.jpg" />
+    <Resource Include="Images\ProteusPhoto.jpg" />
+    <Resource Include="Images\SaturnPhoto.jpg" />
+    <Resource Include="Images\TitaniumPhoto.jpg" />
+    <Resource Include="Images\TritonPhoto.jpg" />
+    <Resource Include="Images\UmbrielPhoto.jpg" />
+    <Resource Include="Images\UranusPhoto.jpg" />
+    <Resource Include="Images\VenusPhoto.jpg" />
+    <Resource Include="Images\ІоPhoto.jpg" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
     <PropertyGroup>
