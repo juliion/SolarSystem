@@ -132,6 +132,10 @@
     <Compile Include="Models\Planet.cs" />
     <Compile Include="Models\Moon.cs" />
     <Compile Include="Models\Star.cs" />
+    <Compile Include="ViewModel\AppViewModel.cs" />
+    <Compile Include="ViewModel\MoonsViewModel.cs" />
+    <Compile Include="ViewModel\PlanetsViewModel.cs" />
+    <Compile Include="ViewModel\StarsViewModel.cs" />
     <Compile Include="Views\AboutPlanet.xaml.cs">
       <DependentUpon>AboutPlanet.xaml</DependentUpon>
     </Compile>
