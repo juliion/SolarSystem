@@ -124,6 +124,10 @@
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="Context\SolarSystemContext.cs" />
+    <Compile Include="Migrations\202206281031522_FirstMigration.cs" />
+    <Compile Include="Migrations\202206281031522_FirstMigration.designer.cs">
+      <DependentUpon>202206281031522_FirstMigration.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Planet.cs" />
     <Compile Include="Models\Moon.cs" />
@@ -160,6 +164,9 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <EmbeddedResource Include="Migrations\202206281031522_FirstMigration.resx">
+      <DependentUpon>202206281031522_FirstMigration.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
