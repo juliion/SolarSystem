@@ -8,7 +8,7 @@
         Title="Про супутник" MinHeight="700" MinWidth="950"
         Height="770" Width="1190"
         Icon="../Images/Icons/favicon.ico" WindowStartupLocation="CenterScreen">
-    <Grid Style="{StaticResource AboutSatelliteGrid}">
+    <Grid Style="{StaticResource AboutMoonGrid}">
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="207*"/>
             <ColumnDefinition Width="619*"/>
@@ -19,24 +19,24 @@
             <RowDefinition Height="507*"/>
             <RowDefinition Height="96*"/>
         </Grid.RowDefinitions>
-        <Border Style="{StaticResource MainBorderSatellite}" Grid.Row="1" Grid.Column="1">
+        <Border Style="{StaticResource MainBorderMoon}" Grid.Row="1" Grid.Column="1">
             <StackPanel>
-                <Border Style="{StaticResource TextBlockBorderSatellite}">
-                    <TextBlock Style="{StaticResource TextBlockSatellite}" Text="Супутник"/>
+                <Border Style="{StaticResource TextBlockBorderMoon}">
+                    <TextBlock Style="{StaticResource TextBlockMoon}" Text="Супутник"/>
                 </Border>
                 <Image Source="../Images/test.jpg"
                        Width="500" Height="270" Margin="4"/>
-                <Border Style="{StaticResource TextBlockBorderSatellite}">
-                    <TextBlock Style="{StaticResource TextBlockSatellite}" Text="Вік:"/>
+                <Border Style="{StaticResource TextBlockBorderMoon}">
+                    <TextBlock Style="{StaticResource TextBlockMoon}" Text="Вік:"/>
                 </Border>
-                <Border Style="{StaticResource TextBlockBorderSatellite}">
-                    <TextBlock Style="{StaticResource TextBlockSatellite}" Text="Діаметр:"/>
+                <Border Style="{StaticResource TextBlockBorderMoon}">
+                    <TextBlock Style="{StaticResource TextBlockMoon}" Text="Діаметр:"/>
                 </Border>
-                <Border Style="{StaticResource TextBlockBorderSatellite}">
-                    <TextBlock Style="{StaticResource TextBlockSatellite}" Text="Відстань до землі:"/>
+                <Border Style="{StaticResource TextBlockBorderMoon}">
+                    <TextBlock Style="{StaticResource TextBlockMoon}" Text="Відстань до землі:"/>
                 </Border>
-                <Border Style="{StaticResource TextBlockBorderSatellite}">
-                    <TextBlock Style="{StaticResource TextBlockSatellite}" Text="Планета:"/>
+                <Border Style="{StaticResource TextBlockBorderMoon}">
+                    <TextBlock Style="{StaticResource TextBlockMoon}" Text="Планета:"/>
                 </Border>
             </StackPanel>
         </Border>

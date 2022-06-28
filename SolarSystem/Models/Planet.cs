@@ -16,19 +16,19 @@ namespace SolarSystem.Models
         [MaxLength(100)]
         public string Name { get; set; }
         [Required]
-        public float DistanceFromSun { get; set; }
+        public double DistanceFromSun { get; set; }
         [Required]
-        public float Diameter { get; set; }
+        public double Diameter { get; set; }
         [Required]
-        public float YearLength { get; set; }
+        public double YearLength { get; set; }
         [Required]
-        public float DayLength { get; set; }
+        public double DayLength { get; set; }
         public string PhotoPath { get; set; }
         public string DocPath { get; set; }
         public int StarId { get; set; }
         [ForeignKey("StarId")]
         public virtual Star Star { get; set; }
-        public virtual List<Satellite> Satellites { get; set; }
+        public virtual List<Moon> Satellites { get; set; }
 
     }
 }

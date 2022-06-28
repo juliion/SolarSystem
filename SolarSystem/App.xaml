@@ -8,7 +8,7 @@
             <ResourceDictionary.MergedDictionaries>
                 <ResourceDictionary Source="Resources/MainStyle.xaml"/>
                 <ResourceDictionary Source="Resources/AboutPlanetStyle.xaml"/>
-                <ResourceDictionary Source="Resources/AboutSatelliteStyle.xaml"/>
+                <ResourceDictionary Source="Resources/AboutMoonStyle.xaml"/>
                 <ResourceDictionary Source="Resources/AboutStarStyle.xaml"/>
             </ResourceDictionary.MergedDictionaries>
         </ResourceDictionary>

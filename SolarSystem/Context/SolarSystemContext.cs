@@ -14,6 +14,6 @@ namespace SolarSystem.Context
 
         public virtual DbSet<Star> Stars { get; set; }
         public virtual DbSet<Planet> Planets { get; set; }
-        public virtual DbSet<Satellite> Satellites { get; set; }
+        public virtual DbSet<Moon> Moons { get; set; }
     }
 }

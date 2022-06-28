@@ -83,11 +83,19 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Page Include="Docs\MercuryDoc.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Docs\SunDoc.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Resources\AboutPlanetStyle.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Resources\AboutSatelliteStyle.xaml">
+    <Page Include="Resources\AboutMoonStyle.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -99,7 +107,7 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Views\AboutSatellite.xaml">
+    <Page Include="Views\AboutMoon.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -116,14 +124,15 @@
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="Context\SolarSystemContext.cs" />
+    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Planet.cs" />
-    <Compile Include="Models\Satellite.cs" />
+    <Compile Include="Models\Moon.cs" />
     <Compile Include="Models\Star.cs" />
     <Compile Include="Views\AboutPlanet.xaml.cs">
       <DependentUpon>AboutPlanet.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Views\AboutSatellite.xaml.cs">
-      <DependentUpon>AboutSatellite.xaml</DependentUpon>
+    <Compile Include="Views\AboutMoon.xaml.cs">
+      <DependentUpon>AboutMoon.xaml</DependentUpon>
     </Compile>
     <Compile Include="Views\AboutStar.xaml.cs">
       <DependentUpon>AboutStar.xaml</DependentUpon>
@@ -172,10 +181,7 @@
   </ItemGroup>
   <ItemGroup>
     <Resource Include="Images\Backgrounds\aboutPlanetBackgr.jpg" />
-    <Resource Include="Images\Backgrounds\aboutSatelliteBackgr.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="Images\test.jpg" />
+    <Resource Include="Images\Backgrounds\aboutMoonBackgr.jpg" />
   </ItemGroup>
   <ItemGroup>
     <Resource Include="Images\Backgrounds\aboutStarBackgr.jpg" />
@@ -191,6 +197,12 @@
       <ProductName>.NET Framework 3.5 SP1</ProductName>
       <Install>false</Install>
     </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\SunPhoto.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\MercuryPhoto.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">

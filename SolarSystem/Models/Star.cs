@@ -16,13 +16,16 @@ namespace SolarSystem.Models
         [MaxLength(100)]
         public string Name { get; set; }
         [Required]
-        public float Age { get; set; }
+        public double Age { get; set; }
         [Required]
-        public float Diameter { get; set; }
+        public double Diameter { get; set; }
         [Required]
-        public float Mass { get; set; }
+        [MaxLength(50)]
+        public string Mass { get; set; }
         [Required]
-        public float SurfaceTemp { get; set; }
+        public double AbsoluteMagnitude { get; set; }
+        [Required]
+        public double SurfaceTemp { get; set; }
         public string PhotoPath { get; set; }
         public string DocPath { get; set; }
 

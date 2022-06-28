@@ -8,7 +8,7 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace SolarSystem.Models
 {
-    public class Satellite
+    public class Moon
     {
         [Key]
         public int Id { get; set; }
@@ -16,11 +16,11 @@ namespace SolarSystem.Models
         [MaxLength(100)]
         public string Name { get; set; }
         [Required]
-        public float Age { get; set; }
+        public double Age { get; set; }
         [Required]
-        public float Diameter { get; set; }
+        public double Diameter { get; set; }
         [Required]
-        public float DistanceFromEarth { get; set; }
+        public double ApparentMagnitude { get; set; }
         public string PhotoPath { get; set; }
         public string DocPath { get; set; }
         public int PlanetId { get; set; }
