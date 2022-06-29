@@ -15,11 +15,14 @@
             <ColumnDefinition Width="358*"/>
         </Grid.ColumnDefinitions>
         <Grid.RowDefinitions>
-            <RowDefinition Height="137*"/>
-            <RowDefinition Height="507*"/>
-            <RowDefinition Height="96*"/>
+            <RowDefinition Height="13*"/>
+            <RowDefinition Height="62*"/>
+            <RowDefinition Height="38*"/>
+            <RowDefinition Height="49*"/>
+            <RowDefinition Height="502*"/>
+            <RowDefinition Height="77*"/>
         </Grid.RowDefinitions>
-        <Border Style="{StaticResource MainBorderPlanet}" Grid.Row="1" Grid.Column="1">
+        <Border Style="{StaticResource MainBorderPlanet}" Grid.Row="4" Grid.Column="1">
             <StackPanel>
                 <Border Style="{StaticResource TextBlockBorderPlanet}">
                     <TextBlock Style="{StaticResource TextBlockPlanet}" Text="Планета"/>
@@ -40,6 +43,7 @@
                 </Border>
             </StackPanel>
         </Border>
-        
+        <Menu Style="{StaticResource MoonsMenu}" Grid.Row="2" Grid.Column="1">
+        </Menu>
     </Grid>
 </Window>

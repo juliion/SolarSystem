@@ -7,6 +7,20 @@
             </Setter.Value>
         </Setter>
     </Style>
+    <Style x:Key="MoonsMenu" TargetType="Menu">
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate>
+                    <Border BorderBrush="White"  BorderThickness="2" CornerRadius="30"
+                            Background="#AAAAAAAA" Padding="3">
+                        <StackPanel ClipToBounds="True" Orientation="Horizontal"
+                                    HorizontalAlignment="Center" VerticalAlignment="Center"
+                                    IsItemsHost="True"/>
+                    </Border>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
     <Style x:Key="MainBorderPlanet" TargetType="Border">
         <Setter Property="Background" Value="#da4682b4"/>
         <Setter Property="Padding" Value="10"/>
