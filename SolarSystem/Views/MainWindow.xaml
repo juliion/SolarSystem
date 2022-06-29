@@ -32,8 +32,13 @@
         <Menu Style="{StaticResource PlanetsMenu}" Grid.Row="3" Grid.Column="1"
               ItemsSource="{Binding PlanetsVM.Planets}">
             <Menu.ItemTemplate>
-                <HierarchicalDataTemplate  ItemsSource="{Binding Path=PlanetsVM.Planets}">
-                    <TextBlock Text="{Binding Name}"/>
+                <HierarchicalDataTemplate ItemsSource="{Binding Path=Moons}">
+                    <TextBlock Text="{Binding Name}" />
+                    <HierarchicalDataTemplate.ItemTemplate>
+                        <DataTemplate>
+                            <TextBlock Text="{Binding Name}" />
+                        </DataTemplate>
+                    </HierarchicalDataTemplate.ItemTemplate>
                 </HierarchicalDataTemplate>
             </Menu.ItemTemplate>
         </Menu>
