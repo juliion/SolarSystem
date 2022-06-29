@@ -12,8 +12,9 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using SolarSystem.ViewModel;
 
-namespace SolarSystem
+namespace SolarSystem.Views
 {
     /// <summary>
     /// Interaction logic for MainWindow.xaml
@@ -23,6 +24,7 @@ namespace SolarSystem
         public MainWindow()
         {
             InitializeComponent();
+            this.DataContext = new AppViewModel();
         }
     }
 }
