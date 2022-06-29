@@ -28,7 +28,7 @@ namespace SolarSystem.Models
         public int StarId { get; set; }
         [ForeignKey("StarId")]
         public virtual Star Star { get; set; }
-        public virtual List<Moon> Satellites { get; set; }
+        public virtual List<Moon> Moons { get; set; }
 
     }
 }
