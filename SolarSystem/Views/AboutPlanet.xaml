@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:SolarSystem.Views"
         mc:Ignorable="d"
-        Title="Про планету" MinHeight="700" MinWidth="950"
+        Title="{Binding SelectedPlanet.Name, StringFormat=Про {0}}" MinHeight="700" MinWidth="950"
         Height="770" Width="1190"
         Icon="../Images/Icons/favicon.ico" WindowStartupLocation="CenterScreen"
         Loaded="Window_Loaded">
