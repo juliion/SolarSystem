@@ -108,6 +108,8 @@
         <Setter Property="FontFamily" Value="Franklin Gothic Medium"/>
         <Setter Property="FontSize" Value="20"/>
         <Setter Property="Margin" Value="10, 0, 10, 0"/>
+        <Setter Property="Command" Value="{Binding RelativeSource={ RelativeSource FindAncestor, AncestorType={ x:Type Window}}, Path= DataContext.StarsVM.SelectStar}" />
+        <Setter Property="CommandParameter" Value="{Binding}"/>
         <Style.Triggers>
             <Trigger Property="IsHighlighted" Value="True">
                 <Setter Property="Foreground" Value="Black"/>
