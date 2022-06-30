@@ -8,11 +8,12 @@
         </Setter>
     </Style>
     <Style x:Key="MoonsMenu" TargetType="Menu">
+        <Setter Property="HorizontalAlignment" Value="Left"/>
         <Setter Property="Template">
             <Setter.Value>
                 <ControlTemplate>
-                    <Border BorderBrush="White"  BorderThickness="2" CornerRadius="30"
-                            Background="#AAAAAAAA" Padding="3">
+                    <Border BorderBrush="#ff275a86"  BorderThickness="2" CornerRadius="30"
+                            Background="#da4682b4" Padding="3" Width="250">
                         <StackPanel ClipToBounds="True" Orientation="Horizontal"
                                     HorizontalAlignment="Center" VerticalAlignment="Center"
                                     IsItemsHost="True"/>
@@ -36,6 +37,22 @@
     <Style x:Key="TextBlockPlanet" TargetType="TextBlock">
         <Setter Property="FontWeight" Value="Bold"/>
         <Setter Property="Foreground" Value="White"/>
+        <Setter Property="FontSize" Value="13"/>
         <Setter Property="FontFamily" Value="Franklin Gothic Medium"/>
+    </Style>
+    <Style x:Key="MoonsMenuItem" TargetType="MenuItem">
+        <Setter Property="Template" Value="{DynamicResource MenuItemControlTemplate1}"/>
+        <Setter Property="FontWeight" Value="Bold"/>
+        <Setter Property="Foreground" Value="White"/>
+        <Setter Property="FontFamily" Value="Franklin Gothic Medium"/>
+        <Setter Property="FontSize" Value="13"/>
+        <Setter Property="Margin" Value="10, 0, 10, 0"/>
+        <Setter Property="Command" Value="{Binding RelativeSource={ RelativeSource FindAncestor, AncestorType={ x:Type Window}}, Path= DataContext.MoonsVM.SelectMoon}" />
+        <Setter Property="CommandParameter" Value="{Binding}"/>
+        <Style.Triggers>
+            <Trigger Property="IsHighlighted" Value="True">
+                <Setter Property="Foreground" Value="Navy"/>
+            </Trigger>
+        </Style.Triggers>
     </Style>
 </ResourceDictionary>

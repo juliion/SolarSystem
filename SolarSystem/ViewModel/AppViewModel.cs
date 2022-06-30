@@ -10,6 +10,5 @@ namespace SolarSystem.ViewModel
     {
         public StarsViewModel StarsVM { get; set; } = new StarsViewModel();
         public PlanetsViewModel PlanetsVM { get; set; } = new PlanetsViewModel();
-        public MoonsViewModel MoonsVM { get; set; } = new MoonsViewModel();
     }
 }
