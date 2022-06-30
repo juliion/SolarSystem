@@ -86,7 +86,22 @@
             </Trigger>
         </ControlTemplate.Triggers>
     </ControlTemplate>
-    <Style TargetType="MenuItem">
+    <Style x:Key="PlanetsMenuItem" TargetType="MenuItem">
+        <Setter Property="Template" Value="{DynamicResource MenuItemControlTemplate1}"/>
+        <Setter Property="FontWeight" Value="Bold"/>
+        <Setter Property="Foreground" Value="White"/>
+        <Setter Property="FontFamily" Value="Franklin Gothic Medium"/>
+        <Setter Property="FontSize" Value="20"/>
+        <Setter Property="Margin" Value="10, 0, 10, 0"/>
+        <Setter Property="Command" Value="{Binding RelativeSource={ RelativeSource FindAncestor, AncestorType={ x:Type Window}}, Path= DataContext.PlanetsVM.SelectPlanet}" />
+        <Setter Property="CommandParameter" Value="{Binding}"/>
+        <Style.Triggers>
+            <Trigger Property="IsHighlighted" Value="True">
+                <Setter Property="Foreground" Value="Black"/>
+            </Trigger>
+        </Style.Triggers>
+    </Style>
+    <Style x:Key="StarsMenuItem" TargetType="MenuItem">
         <Setter Property="Template" Value="{DynamicResource MenuItemControlTemplate1}"/>
         <Setter Property="FontWeight" Value="Bold"/>
         <Setter Property="Foreground" Value="White"/>
@@ -98,6 +113,5 @@
                 <Setter Property="Foreground" Value="Black"/>
             </Trigger>
         </Style.Triggers>
-        
     </Style>
 </ResourceDictionary>
