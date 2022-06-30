@@ -8,6 +8,8 @@ using System.Runtime.CompilerServices;
 using System.Collections.ObjectModel;
 using SolarSystem.Models;
 using SolarSystem.Context;
+using SolarSystem.Commands;
+using SolarSystem.Views;
 
 namespace SolarSystem.ViewModel
 {
@@ -26,6 +28,24 @@ namespace SolarSystem.ViewModel
             get
             {
                 return _selectedMoon;
+            }
+        }
+        private RelayCommand _selectMoon;
+        public RelayCommand SelectMoon
+        {
+            get
+            {
+                return _selectMoon ?? (_selectMoon = new RelayCommand(obj =>
+                {
+                    Moon selectedMoon = obj as Moon;
+                    if (selectedMoon != null)
+                    {
+                        SelectedMoon = selectedMoon;
+                        AboutMoon aboutMoon = new AboutMoon(this);
+                        aboutMoon.Show();
+                    }
+
+                }));
             }
         }
         public MoonsViewModel()
