@@ -56,7 +56,7 @@
                     <StackPanel Orientation="Horizontal">
                         <TextBlock Style="{StaticResource TextBlockPlanet}" Text="Тривалість доби:   "/>
                         <TextBlock Style="{StaticResource TextBlockPlanet}" Text="{Binding DayLength}"/>
-                        <TextBlock Style="{StaticResource TextBlockPlanet}" Text=" діб"/>
+                        <TextBlock Style="{StaticResource TextBlockPlanet}" Text=" годин"/>
                     </StackPanel>
                 </Border>
             </StackPanel>
