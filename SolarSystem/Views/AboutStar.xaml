@@ -57,6 +57,6 @@
                 </Border>
             </StackPanel>
         </Border>
-
+        <Button Grid.Row="5" Grid.Column="2" Content="Дізнатися більше" />
     </Grid>
 </Window>

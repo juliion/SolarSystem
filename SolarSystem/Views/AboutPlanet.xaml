@@ -18,12 +18,27 @@
         </Grid.ColumnDefinitions>
         <Grid.RowDefinitions>
             <RowDefinition Height="13*"/>
-            <RowDefinition Height="62*"/>
-            <RowDefinition Height="52*"/>
+            <RowDefinition Height="49*"/>
+            <RowDefinition Height="65*"/>
             <RowDefinition Height="35*"/>
             <RowDefinition Height="502*"/>
             <RowDefinition Height="77*"/>
         </Grid.RowDefinitions>
+        <StackPanel x:Name="PlanetMoonsPanel" Grid.Row="2" Grid.Column="1">
+            <TextBlock Style="{StaticResource TextBlockPlanet}" Text="Супутники:" 
+                       Margin="0, 0, 0, 5"/>
+            <Menu Style="{StaticResource MoonsMenu}"
+                ItemsSource="{Binding Moons}">
+                <Menu.ItemContainerStyle>
+                    <Style TargetType="MenuItem" BasedOn="{StaticResource MoonsMenuItem}"/>
+                </Menu.ItemContainerStyle>
+                <Menu.ItemTemplate>
+                    <HierarchicalDataTemplate ItemsSource="{Binding Path=Moons}">
+                        <TextBlock Text="{Binding Name}" />
+                    </HierarchicalDataTemplate>
+                </Menu.ItemTemplate>
+            </Menu>
+        </StackPanel>
         <Border Style="{StaticResource MainBorderPlanet}" Grid.Row="4" Grid.Column="1">
             <StackPanel>
                 <Border Style="{StaticResource TextBlockBorderPlanet}">
@@ -56,24 +71,11 @@
                     <StackPanel Orientation="Horizontal">
                         <TextBlock Style="{StaticResource TextBlockPlanet}" Text="Тривалість доби:   "/>
                         <TextBlock Style="{StaticResource TextBlockPlanet}" Text="{Binding DayLength}"/>
-                        <TextBlock Style="{StaticResource TextBlockPlanet}" Text=" годин"/>
+                        <TextBlock Style="{StaticResource TextBlockPlanet}" Text=" год."/>
                     </StackPanel>
                 </Border>
             </StackPanel>
         </Border>
-        <StackPanel x:Name="PlanetMoonsPanel" Grid.Row="2" Grid.Column="1">
-            <TextBlock Style="{StaticResource TextBlockPlanet}" Text="Супутники:"/>
-            <Menu Style="{StaticResource MoonsMenu}"
-                ItemsSource="{Binding Moons}">
-                <Menu.ItemContainerStyle>
-                    <Style TargetType="MenuItem" BasedOn="{StaticResource MoonsMenuItem}"/>
-                </Menu.ItemContainerStyle>
-                <Menu.ItemTemplate>
-                    <HierarchicalDataTemplate ItemsSource="{Binding Path=Moons}">
-                        <TextBlock Text="{Binding Name}" />
-                    </HierarchicalDataTemplate>
-                </Menu.ItemTemplate>
-            </Menu>
-        </StackPanel>
+        <Button Grid.Row="5" Grid.Column="2" Content="Дізнатися більше" />
     </Grid>
 </Window>
