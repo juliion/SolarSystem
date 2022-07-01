@@ -31,7 +31,7 @@
             <RowDefinition/>
         </Grid.RowDefinitions>
         <Border Background="#c0e778c6" Grid.Column="1" Grid.Row="1" >
-            <FlowDocumentReader x:Name="Reader" Background="#cc9cd1" BorderBrush="Beige">
+            <FlowDocumentReader x:Name="Reader" Background="#cc9cd1">
 
             </FlowDocumentReader>
         </Border>
