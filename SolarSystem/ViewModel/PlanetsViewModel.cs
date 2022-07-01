@@ -49,6 +49,18 @@ namespace SolarSystem.ViewModel
                 }));
             }
         }
+        private RelayCommand _openReadMorePlanet;
+        public RelayCommand OpenReadMorePlanet
+        {
+            get
+            {
+                return _openReadMorePlanet ?? (_openReadMorePlanet = new RelayCommand(obj =>
+                {
+                    ReadMore readMore = new ReadMore(SelectedPlanet.DocPath);
+                    readMore.ShowDialog();
+                }));
+            }
+        }
         public PlanetsViewModel()
         {
             _context = new SolarSystemContext();

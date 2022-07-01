@@ -48,6 +48,19 @@ namespace SolarSystem.ViewModel
                 }));
             }
         }
+
+        private RelayCommand _openReadMoreMoon;
+        public RelayCommand OpenReadMoreMoon
+        {
+            get
+            {
+                return _openReadMoreMoon ?? (_openReadMoreMoon = new RelayCommand(obj =>
+                {
+                    ReadMore readMore = new ReadMore(SelectedMoon.DocPath);
+                    readMore.ShowDialog();
+                }));
+            }
+        }
         public MoonsViewModel()
         {
             _context = new SolarSystemContext();

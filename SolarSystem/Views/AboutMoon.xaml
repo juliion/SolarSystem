@@ -8,8 +8,7 @@
         Title= "{Binding SelectedMoon.Name, StringFormat=Про {0}}" MinHeight="700" MinWidth="950"
         Height="770" Width="1190"
         Icon="../Images/Icons/favicon.ico" WindowStartupLocation="CenterScreen">
-    <Grid Style="{StaticResource AboutMoonGrid}"
-          DataContext="{Binding SelectedMoon}">
+    <Grid Style="{StaticResource AboutMoonGrid}">
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="207*"/>
             <ColumnDefinition Width="619*"/>
@@ -20,7 +19,8 @@
             <RowDefinition Height="507*"/>
             <RowDefinition Height="96*"/>
         </Grid.RowDefinitions>
-        <Border Style="{StaticResource MainBorderMoon}" Grid.Row="1" Grid.Column="1">
+        <Border Style="{StaticResource MainBorderMoon}" Grid.Row="1" Grid.Column="1"
+                DataContext="{Binding SelectedMoon}">
             <StackPanel>
                 <Border Style="{StaticResource TextBlockBorderMoon}">
                     <TextBlock Style="{StaticResource TextBlockMoon}" Text="{Binding Name}"/>
@@ -49,6 +49,8 @@
                 </Border>
             </StackPanel>
         </Border>
-        <Button Grid.Row="5" Grid.Column="2" Content="Дізнатися більше" />
+        <Button Grid.Row="5" Grid.Column="2"
+                Content="Дізнатися більше" 
+                Command="{Binding OpenReadMoreMoon}"/>
     </Grid>
 </Window>

@@ -9,8 +9,7 @@
         Height="770" Width="1190"
         Icon="../Images/Icons/favicon.ico" WindowStartupLocation="CenterScreen"
         Loaded="Window_Loaded">
-    <Grid Style="{StaticResource AboutPlanetGrid}"
-          DataContext="{Binding SelectedPlanet}">
+    <Grid Style="{StaticResource AboutPlanetGrid}">
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="207*"/>
             <ColumnDefinition Width="619*"/>
@@ -24,7 +23,8 @@
             <RowDefinition Height="502*"/>
             <RowDefinition Height="77*"/>
         </Grid.RowDefinitions>
-        <StackPanel x:Name="PlanetMoonsPanel" Grid.Row="2" Grid.Column="1">
+        <StackPanel x:Name="PlanetMoonsPanel" Grid.Row="2" Grid.Column="1"
+                    DataContext="{Binding SelectedPlanet}">
             <TextBlock Style="{StaticResource TextBlockPlanet}" Text="Супутники:" 
                        Margin="0, 0, 0, 5"/>
             <Menu Style="{StaticResource MoonsMenu}"
@@ -39,7 +39,8 @@
                 </Menu.ItemTemplate>
             </Menu>
         </StackPanel>
-        <Border Style="{StaticResource MainBorderPlanet}" Grid.Row="4" Grid.Column="1">
+        <Border Style="{StaticResource MainBorderPlanet}" Grid.Row="4" Grid.Column="1"
+                DataContext="{Binding SelectedPlanet}">
             <StackPanel>
                 <Border Style="{StaticResource TextBlockBorderPlanet}">
                     <TextBlock Style="{StaticResource TextBlockPlanet}" Text="{Binding Name}"/>
@@ -76,6 +77,8 @@
                 </Border>
             </StackPanel>
         </Border>
-        <Button Grid.Row="5" Grid.Column="2" Content="Дізнатися більше" />
+        <Button Grid.Row="5" Grid.Column="2"
+                Content="Дізнатися більше" 
+                Command="{Binding OpenReadMorePlanet}"/>
     </Grid>
 </Window>

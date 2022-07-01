@@ -48,6 +48,18 @@ namespace SolarSystem.ViewModel
                 }));
             }
         }
+        private RelayCommand _openReadMoreStar;
+        public RelayCommand OpenReadMoreStar
+        {
+            get
+            {
+                return _openReadMoreStar ?? (_openReadMoreStar = new RelayCommand(obj =>
+                {
+                    ReadMore readMore = new ReadMore(SelectedStar.DocPath);
+                    readMore.ShowDialog();
+                }));
+            }
+        }
         public StarsViewModel()
         {
             _context = new SolarSystemContext();

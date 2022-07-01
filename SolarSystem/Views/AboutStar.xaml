@@ -8,8 +8,7 @@
         Title="{Binding SelectedStar.Name, StringFormat=Про {0}}" MinHeight="700" MinWidth="950"
         Height="770" Width="1190"
         Icon="../Images/Icons/favicon.ico" WindowStartupLocation="CenterScreen">
-    <Grid Style="{StaticResource AboutStarGrid}"
-          DataContext="{Binding SelectedStar}">
+    <Grid Style="{StaticResource AboutStarGrid}">
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="207*"/>
             <ColumnDefinition Width="619*"/>
@@ -20,7 +19,8 @@
             <RowDefinition Height="507*"/>
             <RowDefinition Height="96*"/>
         </Grid.RowDefinitions>
-        <Border Style="{StaticResource MainBorderStar}" Grid.Row="1" Grid.Column="1">
+        <Border Style="{StaticResource MainBorderStar}" Grid.Row="1" Grid.Column="1"
+                DataContext="{Binding SelectedStar}">
             <StackPanel>
                 <Border Style="{StaticResource TextBlockBorderStar}">
                     <TextBlock Style="{StaticResource TextBlockStar}" Text="{Binding Name}"/>
@@ -57,6 +57,8 @@
                 </Border>
             </StackPanel>
         </Border>
-        <Button Grid.Row="5" Grid.Column="2" Content="Дізнатися більше" />
+        <Button Grid.Row="5" Grid.Column="2" 
+                Content="Дізнатися більше" 
+                Command="{Binding OpenReadMoreStar}"/>
     </Grid>
 </Window>
