@@ -15,8 +15,8 @@
             <ColumnDefinition Width="358*"/>
         </Grid.ColumnDefinitions>
         <Grid.RowDefinitions>
-            <RowDefinition Height="137*"/>
-            <RowDefinition Height="507*"/>
+            <RowDefinition Height="95*"/>
+            <RowDefinition Height="549*"/>
             <RowDefinition Height="96*"/>
         </Grid.RowDefinitions>
         <Border Style="{StaticResource MainBorderStar}" Grid.Row="1" Grid.Column="1"
@@ -46,6 +46,12 @@
                         <TextBlock Style="{StaticResource TextBlockStar}" Text="Маса:   "/>
                         <TextBlock Style="{StaticResource TextBlockStar}" Text="{Binding Mass}"/>
                         <TextBlock Style="{StaticResource TextBlockStar}" Text=" кг"/>
+                    </StackPanel>
+                </Border>
+                <Border Style="{StaticResource TextBlockBorderStar}">
+                    <StackPanel Orientation="Horizontal">
+                        <TextBlock Style="{StaticResource TextBlockStar}" Text="Абсолютна зоряна величина:   "/>
+                        <TextBlock Style="{StaticResource TextBlockStar}" Text="{Binding AbsoluteMagnitude}"/>
                     </StackPanel>
                 </Border>
                 <Border Style="{StaticResource TextBlockBorderStar}">
