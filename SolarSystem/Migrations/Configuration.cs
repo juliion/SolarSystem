@@ -168,7 +168,7 @@
                     Age = 1,
                     Diameter = 3643.2,
                     ApparentMagnitude = 5.02,
-                    PhotoPath = @"..\..\Images\ІоPhoto.jpg",
+                    PhotoPath = @"..\..\Images\IоPhoto.jpg",
                     DocPath = @"..\..\Docs\ІоDoc.xaml",
                     PlanetId = 5
                 },

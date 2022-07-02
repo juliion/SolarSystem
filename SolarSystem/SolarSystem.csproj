@@ -84,6 +84,10 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="Migrations\202207022222149_FirstMigration.cs" />
+    <Compile Include="Migrations\202207022222149_FirstMigration.designer.cs">
+      <DependentUpon>202207022222149_FirstMigration.cs</DependentUpon>
+    </Compile>
     <Compile Include="Views\ReadMore.xaml.cs">
       <DependentUpon>ReadMore.xaml</DependentUpon>
     </Compile>
@@ -143,10 +147,6 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Docs\ІоDoc.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
     <Page Include="Resources\AboutPlanetStyle.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -181,10 +181,6 @@
     </Compile>
     <Compile Include="Commands\RelayCommand.cs" />
     <Compile Include="Context\SolarSystemContext.cs" />
-    <Compile Include="Migrations\202206281031522_FirstMigration.cs" />
-    <Compile Include="Migrations\202206281031522_FirstMigration.designer.cs">
-      <DependentUpon>202206281031522_FirstMigration.cs</DependentUpon>
-    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Planet.cs" />
     <Compile Include="Models\Moon.cs" />
@@ -229,8 +225,8 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
-    <EmbeddedResource Include="Migrations\202206281031522_FirstMigration.resx">
-      <DependentUpon>202206281031522_FirstMigration.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\202207022222149_FirstMigration.resx">
+      <DependentUpon>202207022222149_FirstMigration.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -297,7 +293,7 @@
     <Resource Include="Images\UmbrielPhoto.jpg" />
     <Resource Include="Images\UranusPhoto.jpg" />
     <Resource Include="Images\VenusPhoto.jpg" />
-    <Resource Include="Images\ІоPhoto.jpg" />
+    <Resource Include="Images\IоPhoto.jpg" />
   </ItemGroup>
   <ItemGroup>
     <Resource Include="Images\Backgrounds\readMoreBackgr.jpeg" />
