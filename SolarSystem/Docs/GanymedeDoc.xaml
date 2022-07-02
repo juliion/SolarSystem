@@ -1,0 +1,56 @@
+﻿<FlowDocument xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+              xmlns:local="clr-namespace:SolarSystem.Docs"
+              ColumnWidth="400" FontSize="14" FontFamily="Franklin Gothic Medium"
+              IsOptimalParagraphEnabled="True">
+    <Paragraph FontSize="16">
+        <Underline>
+            <Bold>Цікаві факти:</Bold>
+        </Underline>
+    </Paragraph>
+    <List MarkerStyle="Disc">
+        <ListItem>
+            <Paragraph>Ганімед не лише найбільший супутник в Сонячній системі, за своїми розмірами він навіть більший за планету Меркурій.</Paragraph>
+        </ListItem>
+        <ListItem>
+            <Paragraph>Ганімед має власну тонку атмосферу в якій навіть міститься кисень.</Paragraph>
+        </ListItem>
+        <ListItem>
+            <Paragraph>Результати комп’ютерного моделювання та аналіз відхилень магнітного поля Юпітера говорять про те, що під поверхнею Ганімеда також можуть ховатися океани рідкої води.</Paragraph>
+        </ListItem>
+        <ListItem>
+            <Paragraph>Чотири найбільших супутники Юпітера відкрив ще Галілео Галілей, тому вони називаються «галілеєвими».</Paragraph>
+        </ListItem>
+        <ListItem>
+            <Paragraph>Названий на честь Ганімеда - прекрасний юнак, син троянського царя Троса.</Paragraph>
+        </ListItem>
+    </List>
+    <Paragraph>
+        <Span FontSize="16">
+            <Underline>
+                <Bold>Полярні шапки</Bold>
+            </Underline>
+        </Span>
+        <LineBreak></LineBreak>
+        Ганімед має полярні шапки, як у Марса і Землі. І, як і на цих планетах, вони складаються, ймовірно, здебільшого з водяного снігу. Точніше, на супутнику Юпітера це скоріше іній, але його напластування, що формувалися протягом мільйонів і мільярдів років, цілком тягнуть на те, щоби вже називатися снігом та льодом.
+    </Paragraph>
+    <Paragraph>
+        <Span FontSize="16">
+            <Underline>
+                <Bold>Магнітне поле</Bold>
+            </Underline>
+        </Span>
+        <LineBreak></LineBreak>
+        <LineBreak></LineBreak>
+        Магнітне поле Ганімеда досить слабке, воно простягається в простір лише на 10-13 тисяч кілометрів від його поверхні. Для порівняння, діаметр магнітного поля Сатурна сягає близько мільйона кілометрів. А у Ганімеда його магнітосфера повністю занурена в магнітосферу Юпітера.
+    </Paragraph>
+    <Paragraph>
+        <Span FontSize="16">
+            <Underline>
+                <Bold>Розшарування</Bold>
+            </Underline>
+        </Span>
+        <LineBreak></LineBreak>
+        <LineBreak></LineBreak>
+        Момент інерції у Ганімеда найнижчий серед усіх небесних тіл нашої системи. Це говорить про те, що його надра відрізняються більшим розшаруванням, ніж надра інших відомих нам планет і їх супутників. При цьому, крім "бутерброду" з чотирьох підповерхневих океанів, найбільший супутник Сонячної системи має, ймовірно, і ядро з рідким і твердим шарами, як у нашої власної Землі.
+    </Paragraph>
+</FlowDocument>

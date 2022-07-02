@@ -1,0 +1,61 @@
+﻿<FlowDocument xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+              xmlns:local="clr-namespace:SolarSystem.Docs"
+              ColumnWidth="400" FontSize="14" FontFamily="Franklin Gothic Medium"
+              IsOptimalParagraphEnabled="True">
+    <Paragraph FontSize="16">
+        <Underline>
+            <Bold>Цікаві факти:</Bold>
+        </Underline>
+    </Paragraph>
+    <List MarkerStyle="Disc">
+        <ListItem>
+            <Paragraph>У 2011 році Нептун завершив свій перший з моменту відкриття планети в 1846 повний оборот.</Paragraph>
+        </ListItem>
+        <ListItem>
+            <Paragraph>На Нептуні йдуть дощі з діамантів.</Paragraph>
+        </ListItem>
+        <ListItem>
+            <Paragraph>На Нептуні віють найшвидші вітри в Сонячній системі.</Paragraph>
+        </ListItem>
+        <ListItem>
+            <Paragraph>На думку вчених Нептун сформувався значно ближче до Сонця на ранніх етапах історії Сонячної системи та згодом під впливом гравітаційних сил він віддалився до його сьогоднішнього положення.</Paragraph>
+        </ListItem>
+        <ListItem>
+            <Paragraph>Названий на честь: римського бога морів.</Paragraph>
+        </ListItem>
+    </List>
+    <Paragraph>
+        <Span FontSize="16">
+            <Underline>
+                <Bold>Нептун є крижаним гігантом</Bold>
+            </Underline>
+        </Span>
+        <LineBreak></LineBreak>
+        <LineBreak></LineBreak>
+        Планета Нептун в основному складається з дуже товстої, дуже холодної комбінації води (H2O), аміаку (NH3) і метану (CH4), що покриває важке, розміром із Землю, тверде ядро.
+    </Paragraph>
+    <Paragraph>
+        <Span FontSize="16">
+            <Underline>
+                <Bold>Велика темна пляма Нептуна</Bold>
+            </Underline>
+        </Span>
+        <LineBreak></LineBreak>
+        <LineBreak></LineBreak>
+        Велика темна пляма Нептуна - шторм (антициклон) у південній півкулі планети, що спостерігався під час прольоту Вояджера-2 у 1989 році. Вітри під час шторму були найсильнішими з колись зареєстрованих на планетах Сонячної системи. До 1994 року велика темна пляма повністю зникла; проте дуже схожа пляма з'явилася у північній півкулі Нептуна у 2016 році.
+    </Paragraph>
+    <Paragraph>
+        <Span FontSize="16">
+            <Underline>
+                <Bold>Поверхнева гравітація Нептуна майже подібна до Землі</Bold>
+            </Underline>
+        </Span>
+        <LineBreak></LineBreak>
+        <LineBreak></LineBreak>
+        Нептун – куля з газу та льоду, ймовірно, із скелястим ядром. Ви ніяк не могли б насправді стояти на поверхні Нептуна, не занурившись.
+        <LineBreak></LineBreak>
+        Однак, якби ви могли стояти на поверхні Нептуна, ви б помітили щось дивовижне. Сила тяжіння, що тягне вас вниз, майже точно така ж, як сила тяжіння, яку ви відчуваєте тут, на Землі.
+        <LineBreak></LineBreak>
+        Гравітація Нептуна лише на 17% сильніша за земну гравітацію. Це насправді найближча до земної гравітація у Сонячній системі.
+    </Paragraph>
+</FlowDocument>

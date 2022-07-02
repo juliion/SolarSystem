@@ -1,0 +1,75 @@
+﻿<FlowDocument xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+              xmlns:local="clr-namespace:SolarSystem.Docs"
+              ColumnWidth="400" FontSize="14" FontFamily="Franklin Gothic Medium"
+              IsOptimalParagraphEnabled="True">
+    <Paragraph FontSize="16">
+        <Underline>
+            <Bold>Цікаві факти:</Bold>
+        </Underline>
+    </Paragraph>
+    <List MarkerStyle="Disc">
+        <ListItem>
+            <Paragraph>По поверхні Місяця ходило лише 12 чоловік і всі вони американці.</Paragraph>
+        </ListItem>
+        <ListItem>
+            <Paragraph>Місяць є п’ятою за величиною з 190+ супутників, які обертаються навколо планет Сонячної системи.</Paragraph>
+        </ListItem>
+        <ListItem>
+            <Paragraph>Гравітаційна сила Місяця впливає на океани Землі, викликаючи припливи і відливи вод світового океану.</Paragraph>
+        </ListItem>
+        <ListItem>
+            <Paragraph>Місяць віддаляється приблизно на 3,78 см від нашої планети щороку.</Paragraph>
+        </ListItem>
+        <ListItem>
+            <Paragraph>Місяць другий за яскравістю об'єкт на земному небосхилі після Сонця.</Paragraph>
+        </ListItem>
+    </List>
+    <Paragraph>
+        <Span FontSize="16">
+            <Underline>
+                <Bold>Як з’явився Місяць?</Bold>
+            </Underline>
+        </Span>
+        <LineBreak></LineBreak>
+        Вчені досі не знають остаточної відповіді. Але найбільш вірогідною є гіпотеза «гігантського удару», згідно з якою, приблизно 4,5 мільярда років тому, сталося зіткнення Землі з величезним космічним об’єктом розміром з Марс. З викинутих в космос в результаті удару уламків, з часом і утворився наш природний супутник.
+    </Paragraph>
+    <Paragraph>
+        <Span FontSize="16">
+            <Underline>
+                <Bold>Сліди на місяці</Bold>
+            </Underline>
+        </Span>
+        <LineBreak></LineBreak>
+        <LineBreak></LineBreak>
+        Хоча з тих пір як остання людина ходила по поверхні Місяця пройшло вже майже п’ять десятиліть, через відсутність вітрів і атмосферних опадів, сліди астронавтів, залишені там, залишаються абсолютно недоторканими.
+    </Paragraph>
+    <Paragraph>
+        <Floater HorizontalAlignment="Left" Margin="5">
+            <Paragraph>
+                <Image Source="../Images/Moon.jpg" Width="200"/>
+            </Paragraph>
+        </Floater>
+    </Paragraph>
+    <Paragraph>
+        <Span FontSize="16">
+            <Underline>
+                <Bold>Місяць завжди показує Землі одну й ту ж свою сторону</Bold>
+            </Underline>
+        </Span>
+        <LineBreak></LineBreak>
+        <LineBreak></LineBreak>
+        Місяць знаходиться в синхронному обертанні із Землею. Близька його сторона позначена великими темними рівнинами, які заповнюють проміжки між кратерами.
+    </Paragraph>
+    <Paragraph>
+        <Span FontSize="16">
+            <Underline>
+                <Bold>На Місяці є вода!</Bold>
+            </Underline>
+        </Span>
+        <LineBreak></LineBreak>
+        <LineBreak></LineBreak>
+        Вода у формі льоду, що потрапив всередину пилу та мінералів на поверхню та під неї.
+        <LineBreak></LineBreak>
+        Вона виявлена на ділянках місячної поверхні, які перебувають у постійній тіні і тому дуже холодні, що дозволяє льоду не танути. Вода на Місяці, ймовірно, заносилася на поверхню кометами.  
+    </Paragraph>
+</FlowDocument>
