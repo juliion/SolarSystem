@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:SolarSystem.Views"
         mc:Ignorable="d"
-        Title="Про зірку" MinHeight="700" MinWidth="950"
+        Title="{Binding SelectedStar.Name, StringFormat=Про {0}}" MinHeight="700" MinWidth="950"
         Height="770" Width="1190"
         Icon="../Images/Icons/favicon.ico" WindowStartupLocation="CenterScreen">
     <Grid Style="{StaticResource AboutStarGrid}">
@@ -15,31 +15,56 @@
             <ColumnDefinition Width="358*"/>
         </Grid.ColumnDefinitions>
         <Grid.RowDefinitions>
-            <RowDefinition Height="137*"/>
-            <RowDefinition Height="507*"/>
+            <RowDefinition Height="95*"/>
+            <RowDefinition Height="549*"/>
             <RowDefinition Height="96*"/>
         </Grid.RowDefinitions>
-        <Border Style="{StaticResource MainBorderStar}" Grid.Row="1" Grid.Column="1">
+        <Border Style="{StaticResource MainBorderStar}" Grid.Row="1" Grid.Column="1"
+                DataContext="{Binding SelectedStar}">
             <StackPanel>
                 <Border Style="{StaticResource TextBlockBorderStar}">
-                    <TextBlock Style="{StaticResource TextBlockStar}" Text="Зірка"/>
+                    <TextBlock Style="{StaticResource TextBlockStar}" Text="{Binding Name}"/>
                 </Border>
-                <Image Source="../Images/test.jpg"
+                <Image Source="{Binding PhotoPath}"
                        Width="500" Height="270" Margin="4"/>
                 <Border Style="{StaticResource TextBlockBorderStar}">
-                    <TextBlock Style="{StaticResource TextBlockStar}" Text="Вік:"/>
+                    <StackPanel Orientation="Horizontal">
+                        <TextBlock Style="{StaticResource TextBlockStar}" Text="Вік:   "/>
+                        <TextBlock Style="{StaticResource TextBlockStar}" Text="{Binding Age}"/>
+                        <TextBlock Style="{StaticResource TextBlockStar}" Text=" млрд. р."/>
+                    </StackPanel>
                 </Border>
                 <Border Style="{StaticResource TextBlockBorderStar}">
-                    <TextBlock Style="{StaticResource TextBlockStar}" Text="Діаметр:"/>
+                    <StackPanel Orientation="Horizontal">
+                        <TextBlock Style="{StaticResource TextBlockStar}" Text="Діаметр:   "/>
+                        <TextBlock Style="{StaticResource TextBlockStar}" Text="{Binding Diameter}"/>
+                        <TextBlock Style="{StaticResource TextBlockStar}" Text=" км"/>
+                    </StackPanel>
                 </Border>
                 <Border Style="{StaticResource TextBlockBorderStar}">
-                    <TextBlock Style="{StaticResource TextBlockStar}" Text="Маса:"/>
+                    <StackPanel Orientation="Horizontal">
+                        <TextBlock Style="{StaticResource TextBlockStar}" Text="Маса:   "/>
+                        <TextBlock Style="{StaticResource TextBlockStar}" Text="{Binding Mass}"/>
+                        <TextBlock Style="{StaticResource TextBlockStar}" Text=" кг"/>
+                    </StackPanel>
                 </Border>
                 <Border Style="{StaticResource TextBlockBorderStar}">
-                    <TextBlock Style="{StaticResource TextBlockStar}" Text="Температура поверхні:"/>
+                    <StackPanel Orientation="Horizontal">
+                        <TextBlock Style="{StaticResource TextBlockStar}" Text="Абсолютна зоряна величина:   "/>
+                        <TextBlock Style="{StaticResource TextBlockStar}" Text="{Binding AbsoluteMagnitude}"/>
+                    </StackPanel>
+                </Border>
+                <Border Style="{StaticResource TextBlockBorderStar}">
+                    <StackPanel Orientation="Horizontal">
+                        <TextBlock Style="{StaticResource TextBlockStar}" Text="Температура поверхні:   "/>
+                        <TextBlock Style="{StaticResource TextBlockStar}" Text="{Binding SurfaceTemp}"/>
+                        <TextBlock Style="{StaticResource TextBlockStar}" Text=" °C"/>
+                    </StackPanel>
                 </Border>
             </StackPanel>
         </Border>
-
+        <Button Grid.Row="5" Grid.Column="2" 
+                Content="Дізнатися більше" 
+                Command="{Binding OpenReadMoreStar}"/>
     </Grid>
 </Window>

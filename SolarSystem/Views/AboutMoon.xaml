@@ -1,11 +1,11 @@
-﻿<Window x:Class="SolarSystem.Views.AboutSatellite"
+﻿<Window x:Class="SolarSystem.Views.AboutMoon"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:SolarSystem.Views"
         mc:Ignorable="d"
-        Title="Про супутник" MinHeight="700" MinWidth="950"
+        Title= "{Binding SelectedMoon.Name, StringFormat=Про {0}}" MinHeight="700" MinWidth="950"
         Height="770" Width="1190"
         Icon="../Images/Icons/favicon.ico" WindowStartupLocation="CenterScreen">
     <Grid Style="{StaticResource AboutMoonGrid}">
@@ -19,26 +19,38 @@
             <RowDefinition Height="507*"/>
             <RowDefinition Height="96*"/>
         </Grid.RowDefinitions>
-        <Border Style="{StaticResource MainBorderMoon}" Grid.Row="1" Grid.Column="1">
+        <Border Style="{StaticResource MainBorderMoon}" Grid.Row="1" Grid.Column="1"
+                DataContext="{Binding SelectedMoon}">
             <StackPanel>
                 <Border Style="{StaticResource TextBlockBorderMoon}">
-                    <TextBlock Style="{StaticResource TextBlockMoon}" Text="Супутник"/>
+                    <TextBlock Style="{StaticResource TextBlockMoon}" Text="{Binding Name}"/>
                 </Border>
-                <Image Source="../Images/test.jpg"
+                <Image Source="{Binding PhotoPath}"
                        Width="500" Height="270" Margin="4"/>
                 <Border Style="{StaticResource TextBlockBorderMoon}">
-                    <TextBlock Style="{StaticResource TextBlockMoon}" Text="Вік:"/>
+                    <StackPanel Orientation="Horizontal">
+                        <TextBlock Style="{StaticResource TextBlockMoon}" Text="Вік:   "/>
+                        <TextBlock Style="{StaticResource TextBlockMoon}" Text="{Binding Age}"/>
+                        <TextBlock Style="{StaticResource TextBlockMoon}" Text=" млрд. р."/>
+                    </StackPanel>
                 </Border>
                 <Border Style="{StaticResource TextBlockBorderMoon}">
-                    <TextBlock Style="{StaticResource TextBlockMoon}" Text="Діаметр:"/>
+                    <StackPanel Orientation="Horizontal">
+                        <TextBlock Style="{StaticResource TextBlockMoon}" Text="Діаметр:   "/>
+                        <TextBlock Style="{StaticResource TextBlockMoon}" Text="{Binding Diameter}"/>
+                        <TextBlock Style="{StaticResource TextBlockMoon}" Text=" км"/>
+                    </StackPanel>
                 </Border>
                 <Border Style="{StaticResource TextBlockBorderMoon}">
-                    <TextBlock Style="{StaticResource TextBlockMoon}" Text="Відстань до землі:"/>
-                </Border>
-                <Border Style="{StaticResource TextBlockBorderMoon}">
-                    <TextBlock Style="{StaticResource TextBlockMoon}" Text="Планета:"/>
+                    <StackPanel Orientation="Horizontal">
+                        <TextBlock Style="{StaticResource TextBlockMoon}" Text="Видима зоряна величина:   "/>
+                        <TextBlock Style="{StaticResource TextBlockMoon}" Text="{Binding ApparentMagnitude}"/>
+                    </StackPanel>
                 </Border>
             </StackPanel>
         </Border>
+        <Button Grid.Row="5" Grid.Column="2"
+                Content="Дізнатися більше" 
+                Command="{Binding OpenReadMoreMoon}"/>
     </Grid>
 </Window>

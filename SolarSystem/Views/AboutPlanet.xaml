@@ -5,9 +5,10 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:SolarSystem.Views"
         mc:Ignorable="d"
-        Title="Про планету" MinHeight="700" MinWidth="950"
+        Title="{Binding SelectedPlanet.Name, StringFormat=Про {0}}" MinHeight="700" MinWidth="950"
         Height="770" Width="1190"
-        Icon="../Images/Icons/favicon.ico" WindowStartupLocation="CenterScreen">
+        Icon="../Images/Icons/favicon.ico" WindowStartupLocation="CenterScreen"
+        Loaded="Window_Loaded">
     <Grid Style="{StaticResource AboutPlanetGrid}">
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="207*"/>
@@ -15,31 +16,69 @@
             <ColumnDefinition Width="358*"/>
         </Grid.ColumnDefinitions>
         <Grid.RowDefinitions>
-            <RowDefinition Height="137*"/>
-            <RowDefinition Height="507*"/>
-            <RowDefinition Height="96*"/>
+            <RowDefinition Height="13*"/>
+            <RowDefinition Height="49*"/>
+            <RowDefinition Height="65*"/>
+            <RowDefinition Height="35*"/>
+            <RowDefinition Height="502*"/>
+            <RowDefinition Height="77*"/>
         </Grid.RowDefinitions>
-        <Border Style="{StaticResource MainBorderPlanet}" Grid.Row="1" Grid.Column="1">
+        <StackPanel x:Name="PlanetMoonsPanel" Grid.Row="2" Grid.Column="1"
+                    DataContext="{Binding SelectedPlanet}">
+            <TextBlock Style="{StaticResource TextBlockPlanet}" Text="Супутники:" 
+                       Margin="0, 0, 0, 5"/>
+            <Menu Style="{StaticResource MoonsMenu}"
+                ItemsSource="{Binding Moons}">
+                <Menu.ItemContainerStyle>
+                    <Style TargetType="MenuItem" BasedOn="{StaticResource MoonsMenuItem}"/>
+                </Menu.ItemContainerStyle>
+                <Menu.ItemTemplate>
+                    <HierarchicalDataTemplate ItemsSource="{Binding Path=Moons}">
+                        <TextBlock Text="{Binding Name}" />
+                    </HierarchicalDataTemplate>
+                </Menu.ItemTemplate>
+            </Menu>
+        </StackPanel>
+        <Border Style="{StaticResource MainBorderPlanet}" Grid.Row="4" Grid.Column="1"
+                DataContext="{Binding SelectedPlanet}">
             <StackPanel>
                 <Border Style="{StaticResource TextBlockBorderPlanet}">
-                    <TextBlock Style="{StaticResource TextBlockPlanet}" Text="Планета"/>
+                    <TextBlock Style="{StaticResource TextBlockPlanet}" Text="{Binding Name}"/>
                 </Border>
-                <Image Source="../Images/test.jpg"
+                <Image Source="{Binding PhotoPath}"
                        Width="500" Height="270" Margin="4"/>
                 <Border Style="{StaticResource TextBlockBorderPlanet}">
-                    <TextBlock Style="{StaticResource TextBlockPlanet}" Text="Відстань від Сонця:"/>
+                    <StackPanel Orientation="Horizontal">
+                        <TextBlock Style="{StaticResource TextBlockPlanet}" Text="Відстань від Сонця:  "/>
+                        <TextBlock Style="{StaticResource TextBlockPlanet}" Text="{Binding DistanceFromSun}"/>
+                        <TextBlock Style="{StaticResource TextBlockPlanet}" Text=" млн. км"/>
+                    </StackPanel>
                 </Border>
                 <Border Style="{StaticResource TextBlockBorderPlanet}">
-                    <TextBlock Style="{StaticResource TextBlockPlanet}" Text="Діаметр:"/>
+                    <StackPanel Orientation="Horizontal">
+                        <TextBlock Style="{StaticResource TextBlockPlanet}" Text="Діаметр:   "/>
+                        <TextBlock Style="{StaticResource TextBlockPlanet}" Text="{Binding Diameter}"/>
+                        <TextBlock Style="{StaticResource TextBlockPlanet}" Text=" км"/>
+                    </StackPanel>
                 </Border>
                 <Border Style="{StaticResource TextBlockBorderPlanet}">
-                    <TextBlock Style="{StaticResource TextBlockPlanet}" Text="Тривалість року:"/>
+                    <StackPanel Orientation="Horizontal">
+                        <TextBlock Style="{StaticResource TextBlockPlanet}" Text="Тривалість року:   "/>
+                        <TextBlock Style="{StaticResource TextBlockPlanet}" Text="{Binding YearLength}"/>
+                        <TextBlock Style="{StaticResource TextBlockPlanet}" Text=" земних діб"/>
+                    </StackPanel>
                 </Border>
                 <Border Style="{StaticResource TextBlockBorderPlanet}">
-                    <TextBlock Style="{StaticResource TextBlockPlanet}" Text="Тривалість доби:"/>
+                    <StackPanel Orientation="Horizontal">
+                        <TextBlock Style="{StaticResource TextBlockPlanet}" Text="Тривалість доби:   "/>
+                        <TextBlock Style="{StaticResource TextBlockPlanet}" Text="{Binding DayLength}"/>
+                        <TextBlock Style="{StaticResource TextBlockPlanet}" Text=" год."/>
+                    </StackPanel>
                 </Border>
             </StackPanel>
         </Border>
-        
+        <Button Grid.Row="5" Grid.Column="2"
+                Content="Дізнатися більше" 
+                Command="{Binding OpenReadMorePlanet}"/>
     </Grid>
 </Window>

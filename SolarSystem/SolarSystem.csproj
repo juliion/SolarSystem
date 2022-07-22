@@ -65,6 +65,7 @@
     <Reference Include="System.Data.Entity" />
     <Reference Include="System.Runtime.Serialization" />
     <Reference Include="System.Security" />
+    <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml" />
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System.Core" />
@@ -83,11 +84,66 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="Migrations\202207022222149_FirstMigration.cs" />
+    <Compile Include="Migrations\202207022222149_FirstMigration.designer.cs">
+      <DependentUpon>202207022222149_FirstMigration.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\ReadMore.xaml.cs">
+      <DependentUpon>ReadMore.xaml</DependentUpon>
+    </Compile>
+    <Page Include="Docs\DeimosDoc.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Docs\EarthDoc.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Docs\EuropeDoc.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Docs\GanymedeDoc.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Docs\JupiterDoc.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Docs\MarsDoc.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Docs\MercuryDoc.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="Docs\MoonDoc.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Docs\NeptuneDoc.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Docs\PhobosDoc.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Docs\SaturnDoc.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Docs\SunDoc.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Docs\UranusDoc.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Docs\VenusDoc.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -123,11 +179,8 @@
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="Commands\RelayCommand.cs" />
     <Compile Include="Context\SolarSystemContext.cs" />
-    <Compile Include="Migrations\202206281031522_FirstMigration.cs" />
-    <Compile Include="Migrations\202206281031522_FirstMigration.designer.cs">
-      <DependentUpon>202206281031522_FirstMigration.cs</DependentUpon>
-    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Planet.cs" />
     <Compile Include="Models\Moon.cs" />
@@ -153,6 +206,10 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="Views\ReadMore.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs">
@@ -168,8 +225,8 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
-    <EmbeddedResource Include="Migrations\202206281031522_FirstMigration.resx">
-      <DependentUpon>202206281031522_FirstMigration.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\202207022222149_FirstMigration.resx">
+      <DependentUpon>202207022222149_FirstMigration.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -236,7 +293,19 @@
     <Resource Include="Images\UmbrielPhoto.jpg" />
     <Resource Include="Images\UranusPhoto.jpg" />
     <Resource Include="Images\VenusPhoto.jpg" />
-    <Resource Include="Images\ІоPhoto.jpg" />
+    <Resource Include="Images\IоPhoto.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\Backgrounds\readMoreBackgr.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\Venus.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\Uranus.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\Moon.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">

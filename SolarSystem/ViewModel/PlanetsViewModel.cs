@@ -8,6 +8,8 @@ using System.Runtime.CompilerServices;
 using System.Collections.ObjectModel;
 using SolarSystem.Models;
 using SolarSystem.Context;
+using SolarSystem.Commands;
+using SolarSystem.Views;
 
 namespace SolarSystem.ViewModel
 {
@@ -28,6 +30,37 @@ namespace SolarSystem.ViewModel
                 return _selectedPlanet;
             }
         }
+
+        private RelayCommand _selectPlanet;
+        public RelayCommand SelectPlanet
+        {
+            get
+            {
+                return _selectPlanet ?? (_selectPlanet = new RelayCommand(obj =>
+                {
+                    Planet selectedPlanet = obj as Planet;
+                    if(selectedPlanet != null)
+                    {
+                        SelectedPlanet = selectedPlanet;
+                        AboutPlanet aboutPlanet = new AboutPlanet(this);
+                        aboutPlanet.Show();
+                    }
+
+                }));
+            }
+        }
+        private RelayCommand _openReadMorePlanet;
+        public RelayCommand OpenReadMorePlanet
+        {
+            get
+            {
+                return _openReadMorePlanet ?? (_openReadMorePlanet = new RelayCommand(obj =>
+                {
+                    ReadMore readMore = new ReadMore(SelectedPlanet.DocPath);
+                    readMore.ShowDialog();
+                }));
+            }
+        }
         public PlanetsViewModel()
         {
             _context = new SolarSystemContext();
@@ -37,6 +70,8 @@ namespace SolarSystem.ViewModel
                 Planets.Add(planet);
             }
         }
+        public MoonsViewModel MoonsVM { get; set; } = new MoonsViewModel();
+
         public event PropertyChangedEventHandler PropertyChanged;
         public void OnPropertyChanged([CallerMemberName] string prop = "")
         {

@@ -11,17 +11,19 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
+using SolarSystem.ViewModel;
 
 namespace SolarSystem.Views
 {
     /// <summary>
-    /// Interaction logic for AboutSatellite.xaml
+    /// Interaction logic for AboutMoon.xaml
     /// </summary>
-    public partial class AboutSatellite : Window
+    public partial class AboutMoon : Window
     {
-        public AboutSatellite()
+        public AboutMoon(MoonsViewModel moonsVM)
         {
             InitializeComponent();
+            this.DataContext = moonsVM;
         }
     }
 }

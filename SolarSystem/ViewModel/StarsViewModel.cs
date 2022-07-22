@@ -8,6 +8,8 @@ using System.Runtime.CompilerServices;
 using System.Collections.ObjectModel;
 using SolarSystem.Models;
 using SolarSystem.Context;
+using SolarSystem.Commands;
+using SolarSystem.Views;
 
 namespace SolarSystem.ViewModel
 {
@@ -26,6 +28,36 @@ namespace SolarSystem.ViewModel
             get
             {
                 return _selectedStar;
+            }
+        }
+        private RelayCommand _selectStar;
+        public RelayCommand SelectStar
+        {
+            get
+            {
+                return _selectStar ?? (_selectStar = new RelayCommand(obj =>
+                {
+                    Star selectedStar = obj as Star;
+                    if (selectedStar != null)
+                    {
+                        SelectedStar = selectedStar;
+                        AboutStar aboutStar = new AboutStar(this);
+                        aboutStar.Show();
+                    }
+
+                }));
+            }
+        }
+        private RelayCommand _openReadMoreStar;
+        public RelayCommand OpenReadMoreStar
+        {
+            get
+            {
+                return _openReadMoreStar ?? (_openReadMoreStar = new RelayCommand(obj =>
+                {
+                    ReadMore readMore = new ReadMore(SelectedStar.DocPath);
+                    readMore.ShowDialog();
+                }));
             }
         }
         public StarsViewModel()

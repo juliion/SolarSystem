@@ -1,0 +1,45 @@
+﻿<FlowDocument xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+              xmlns:local="clr-namespace:SolarSystem.Docs"
+              ColumnWidth="400" FontSize="14" FontFamily="Franklin Gothic Medium"
+              IsOptimalParagraphEnabled="True">
+    <Paragraph FontSize="16">
+        <Underline>
+            <Bold>Цікаві факти:</Bold>
+        </Underline>
+    </Paragraph>
+    <List MarkerStyle="Disc">
+        <ListItem>
+            <Paragraph>Якщо поглянути на Деймос з поверхні Марса, навіть коли він у повні, ви побачите невелике небесне тіло яке за яскравістю схоже на Венеру яку спостерігають з Землі.</Paragraph>
+        </ListItem>
+        <ListItem>
+            <Paragraph>Письменники Свіфт і Вольтер у своїх творах передбачали наявність у двох супутників Марса за півтора століття до їх відкриття астрономами.</Paragraph>
+        </ListItem>
+        <ListItem>
+            <Paragraph>75% всіх космічних місій по дослідженню супутників Марса закінчилися невдачею.</Paragraph>
+        </ListItem>
+        <ListItem>
+            <Paragraph>Названий на честь давньогрецького бога Деймоса (перекладається як «Жах»).</Paragraph>
+        </ListItem>
+    </List>
+    <Paragraph>
+        <Span FontSize="16">
+            <Underline>
+                <Bold>Хто і коли відкрив Деймос?</Bold>
+            </Underline>
+        </Span>
+        <LineBreak></LineBreak>
+        Деймос відкритий американським астрономом Асафом Холлом 12 серпня 1877 за Гринвічем, за допомогою 26-дюймового (66-см) телескопа-рефрактора.
+    </Paragraph>
+    <Paragraph>
+        <Span FontSize="16">
+            <Underline>
+                <Bold>Поверхня Деймоса</Bold>
+            </Underline>
+        </Span>
+        <LineBreak></LineBreak>
+        <LineBreak></LineBreak>
+        Поверхня Деймоса виглядає гладкішою, ніж у Фобоса, оскільки покрита тонкозернистим реголітом. Мабуть, при падінні метеоритів, частина піднятого пилу не відлітала геть, а залишалася висіти в межах досяжності поля тяжіння Деймоса, поступово тримаючи в облозі і приховуючи нерівності. На Фобосі такого не було - через низьку орбіту Фобоса весь піднятий пил притягувався Марсом.
+        <LineBreak></LineBreak>
+        Станом на 2019 рік на Деймосі тільки дві деталі поверхні мають власні імена. Це кратери Свіфт (діаметром 1 км) і Вольтер (1,9 км).
+    </Paragraph>
+</FlowDocument>

@@ -23,23 +23,24 @@
         </Grid.RowDefinitions>
          <Menu Style="{StaticResource StarsMenu}" Grid.Row="1" Grid.Column="1"
               ItemsSource="{Binding StarsVM.Stars}">
+            <Menu.ItemContainerStyle>
+                <Style TargetType="MenuItem" BasedOn="{StaticResource StarsMenuItem}"/>
+            </Menu.ItemContainerStyle>
             <Menu.ItemTemplate>
-                <HierarchicalDataTemplate  ItemsSource="{Binding Path=StarsVM.Stars}">
+                <DataTemplate>
                     <TextBlock Text="{Binding Name}"/>
-                </HierarchicalDataTemplate>
+                </DataTemplate>
             </Menu.ItemTemplate>
         </Menu>
         <Menu Style="{StaticResource PlanetsMenu}" Grid.Row="3" Grid.Column="1"
               ItemsSource="{Binding PlanetsVM.Planets}">
+            <Menu.ItemContainerStyle>
+                    <Style TargetType="MenuItem" BasedOn="{StaticResource PlanetsMenuItem}"/>
+                </Menu.ItemContainerStyle>
             <Menu.ItemTemplate>
-                <HierarchicalDataTemplate ItemsSource="{Binding Path=Moons}">
+                <DataTemplate>
                     <TextBlock Text="{Binding Name}" />
-                    <HierarchicalDataTemplate.ItemTemplate>
-                        <DataTemplate>
-                            <TextBlock Text="{Binding Name}" />
-                        </DataTemplate>
-                    </HierarchicalDataTemplate.ItemTemplate>
-                </HierarchicalDataTemplate>
+                </DataTemplate>
             </Menu.ItemTemplate>
         </Menu>
     </Grid>

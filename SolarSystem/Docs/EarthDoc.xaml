@@ -1,0 +1,90 @@
+﻿<FlowDocument xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+              xmlns:local="clr-namespace:SolarSystem.Docs"
+              ColumnWidth="400" FontSize="14" FontFamily="Franklin Gothic Medium"
+              IsOptimalParagraphEnabled="True">
+    <Paragraph FontSize="16">
+        <Underline>
+            <Bold>Цікаві факти:</Bold>
+        </Underline>
+    </Paragraph>
+    <List MarkerStyle="Disc">
+        <ListItem>
+            <Paragraph>Незвичним є факт, що всі планети Сонячної системи крім нашої носять імена з грецької та римської міфології.</Paragraph>
+        </ListItem>
+        <ListItem>
+            <Paragraph>Якщо історію Землі стиснути до 24 годин, то життя б уже з'явилося о четвертій годині ранку, а наземні рослини о 10:24 вечора. В 11:41 вечора в наслідок страшної катастрофи вимерли б динозаври, а людська історія почалася б лише в 11:58:43 вечора.</Paragraph>
+        </ListItem>
+        <ListItem>
+            <Paragraph>Сонячне світло доходить до Землі за 8,3 хв.</Paragraph>
+        </ListItem>
+        <ListItem>
+            <Paragraph>Земля не повністю кулястої форми, оскільки наша планета постійно обертається це також вплинуло і на її форму, Земля дещо випукла на екваторі та трішки сплюснута на полюсах.</Paragraph>
+        </ListItem>
+        <ListItem>
+            <Paragraph>Якщо б Земля була за розміром як куля для більярда, то її поверхня була б більш гладкою ніж поверхня найкращих більярдних куль.</Paragraph>
+        </ListItem>
+        <ListItem>
+            <Paragraph>Земля єдине місцем в Сонячній системі, де можна побачити повне сонячне затемнення.</Paragraph>
+        </ListItem>
+    </List>
+    <Paragraph>
+        <Span FontSize="16">
+            <Underline>
+                <Bold>Земля має найкраще розташування у космосі.</Bold>
+            </Underline>
+        </Span>
+        <LineBreak></LineBreak>
+        <LineBreak></LineBreak>
+        Із астрономічної точки зору, наша планета займає найбільш вдале місце для зародження і підтримання життя. Так, орбіта навколо Сонця знаходиться у межах зони з температурою, яка підтримує існування води у рідкому стані. Вчені вважають цей фактор вирішальним в існуванні форм життя.
+    </Paragraph>
+    <Paragraph>
+        <Span FontSize="16">
+            <Underline>
+                <Bold>70% поверхні Землі вкрито водою.</Bold>
+            </Underline>
+        </Span>
+        <LineBreak></LineBreak>
+        <LineBreak></LineBreak>
+        Коли астронавти вперше вийшли в космос, вони вперше поглянули на Землю людськими очима і назвали наш дім Блакитною планетою.
+    </Paragraph>
+    <Paragraph>
+        <Span FontSize="16">
+            <Underline>
+                <Bold>Чи жарко в центрі Землі?</Bold>
+            </Underline>
+        </Span>
+        <LineBreak></LineBreak>
+        <LineBreak></LineBreak>
+        Температура в центрі Землі становить приблизно 3870 градусів за Цельсієм. З наближенням до центру Землі на один кілометр температура в середньому зростає на 20 градусів за Цельсієм.
+    </Paragraph>
+    <Paragraph>
+        <Span FontSize="16">
+            <Underline>
+                <Bold>Природна електрика</Bold>
+            </Underline>
+        </Span>
+        <LineBreak></LineBreak>
+        <LineBreak></LineBreak>
+        Громи і блискавки – одні з найстрашніших явищ природи. Всього один удар блискавки може нагріти повітря приблизно до 30 тисяч градусів Цельсія , що змушує повітря сильно розширюватися і створює вибухову хвилю , а також сильний гуркіт , який ми називаємо громом.
+    </Paragraph>
+    <Paragraph>
+        <Span FontSize="16">
+            <Underline>
+                <Bold>Обертання Землі поступово сповільнюється.</Bold>
+            </Underline>
+        </Span>
+        <LineBreak></LineBreak>
+        <LineBreak></LineBreak>
+        Це уповільнення відбувається майже непомітно, приблизно з 17 мілісекунд на сто років. Це впливає на довжіну днів на Землі, але це відбувається так повільно, що може пройти до 140 мільйонів років, перш ніж тривалість дня збільшиться до 25 годин.
+    </Paragraph>
+    <Paragraph>
+        <Span FontSize="16">
+            <Underline>
+                <Bold>Земля має потужне магнітне поле.</Bold>
+            </Underline>
+        </Span>
+        <LineBreak></LineBreak>
+        <LineBreak></LineBreak>
+        Це явище спричинене нікелево-залізним ядром планети в поєднанні з його швидким обертанням. Це поле захищає Землю від впливу Сонця.
+    </Paragraph>
+</FlowDocument>

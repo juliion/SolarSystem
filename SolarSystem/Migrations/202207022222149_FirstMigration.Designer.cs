@@ -13,7 +13,7 @@ namespace SolarSystem.Migrations
         
         string IMigrationMetadata.Id
         {
-            get { return "202206281031522_FirstMigration"; }
+            get { return "202207022222149_FirstMigration"; }
         }
         
         string IMigrationMetadata.Source

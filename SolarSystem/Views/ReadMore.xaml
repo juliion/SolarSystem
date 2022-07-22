@@ -1,0 +1,39 @@
+﻿<Window x:Class="SolarSystem.Views.ReadMore"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:SolarSystem.Views"
+        mc:Ignorable="d"
+        Title="Дізнатися більше" MinHeight="700" MinWidth="950"
+        Height="770" Width="1190"
+        Icon="../Images/Icons/favicon.ico" WindowStartupLocation="CenterScreen"
+        Loaded="Window_Loaded">
+    <Window.Resources>
+        <Style TargetType="Grid">
+            <Setter Property="Background">
+                <Setter.Value>
+                    <ImageBrush ImageSource="../Images/Backgrounds/readMoreBackgr.jpeg"/>
+                </Setter.Value>
+            </Setter>
+        </Style>
+    </Window.Resources>
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition Width="5*"/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition Height="20*"/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <Border Background="#c0e778c6" Grid.Column="1" Grid.Row="1" >
+            <FlowDocumentReader x:Name="Reader" Background="#cc9cd1">
+
+            </FlowDocumentReader>
+        </Border>
+    </Grid>
+</Window>

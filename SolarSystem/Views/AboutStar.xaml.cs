@@ -11,6 +11,7 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
+using SolarSystem.ViewModel;
 
 namespace SolarSystem.Views
 {
@@ -19,9 +20,10 @@ namespace SolarSystem.Views
     /// </summary>
     public partial class AboutStar : Window
     {
-        public AboutStar()
+        public AboutStar(StarsViewModel starsVM)
         {
             InitializeComponent();
+            this.DataContext = starsVM;
         }
     }
 }

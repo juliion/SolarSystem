@@ -1,0 +1,82 @@
+﻿<FlowDocument xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+              xmlns:local="clr-namespace:SolarSystem.Docs"
+              ColumnWidth="400" FontSize="14" FontFamily="Franklin Gothic Medium"
+              IsOptimalParagraphEnabled="True">
+    <Paragraph FontSize="16">
+        <Underline>
+            <Bold>Цікаві факти:</Bold>
+        </Underline>
+    </Paragraph>
+    <List MarkerStyle="Disc">
+        <ListItem>
+            <Paragraph>День на Венері довший за рік.</Paragraph>
+        </ListItem>
+        <ListItem>
+            <Paragraph>Венера була першою планетою, рух по небу якої був вивчений людьми ще в другому тисячолітті до нашої ери.</Paragraph>
+        </ListItem>
+        <ListItem>
+            <Paragraph>Венера гарячіша за Меркурій, незважаючи на те, що знаходиться дальше від Сонця.</Paragraph>
+        </ListItem>
+        <ListItem>
+            <Paragraph>На відміну від інших планет у нашій Сонячній системі, Венера крутиться за годинниковою стрілкою наколо своєї осі.</Paragraph>
+        </ListItem>
+        <ListItem>
+            <Paragraph>Венера – другий найяскравіший природний об’єкт на нічному небі після Місяця.</Paragraph>
+        </ListItem>
+        <ListItem>
+            <Paragraph>Названа на честь: давньоримської богині кохання та краси.</Paragraph>
+        </ListItem>
+    </List>
+    <Paragraph>
+        <Floater HorizontalAlignment="Left" Margin="5">
+            <Paragraph>
+                <Image Source="../Images/Venus.jpg" Width="200"/>
+            </Paragraph>
+        </Floater>
+    </Paragraph>
+    <Paragraph>
+        <Span FontSize="16">
+            <Underline>
+                <Bold>Скільки летіти до Венери?</Bold>
+            </Underline>
+        </Span>
+        <LineBreak></LineBreak>
+        <LineBreak></LineBreak>
+        Космічний апарат «Марінер-2», відправлений НАСА на Венеру у 1962 році, та «Венера-7», запущений у Радянському Союзі у 1970 році, досягли планети менш ніж за чотири місяці.
+    </Paragraph>
+    <Paragraph>
+        <Span FontSize="16">
+            <Underline>
+                <Bold>Яка температура на Венері?</Bold>
+            </Underline>
+        </Span>
+        <LineBreak></LineBreak>
+        <LineBreak></LineBreak>
+        Щільна атмосфера Венери утримує тепло, внаслідок чого температура поверхні планети становить близько 470 °C. Таким чином, температура поверхні Венери вища за температуру поверхні Меркурія, найближчої планети до Сонця.
+    </Paragraph>
+    <Paragraph>
+        <Span FontSize="16">
+            <Underline>
+                <Bold>Якого кольору Венера?</Bold>
+            </Underline>
+        </Span>
+        <LineBreak></LineBreak>
+        <LineBreak></LineBreak>
+        Венера здається нам біло-жовтою із вкрапленнями червоного та коричневого. Такий колір їй надає щільна атмосфера з вуглекислого газу та хмари сірчаної кислоти.
+    </Paragraph>
+    <Paragraph>
+        <Span FontSize="16">
+            <Underline>
+                <Bold>Чому Венера – це ранкова зірка?</Bold>
+            </Underline>
+        </Span>
+        <LineBreak></LineBreak>
+        <LineBreak></LineBreak>
+        Венеру легко розпізнати, тому що по блиску вона набагато перевершує найяскравіші з зірок. Відмітною ознакою планети є її рівний білий колір. Венера, так само як і Меркурій, не відходить на небі на велику відстань від Сонця. Як і в Меркурія, у Венери є періоди ранкової та вечірньої видимості: у давнину вважали, що ранкова і вечірня Венери - різні зірки. Венера - третій по яскравості об'єкт на нашому небі.
+        <LineBreak></LineBreak>
+        У телескоп, навіть невеликий, можна без праці побачити і поспостерігати зміна видимої фази диска планети. Його вперше спостерігав у 1610 році Галілей.
+        <LineBreak></LineBreak>
+        Цікаво, що астрономи давнини приймали Венеру за два різні небесні об'єкти: Ранкову зірку та Вечірню зірку; древні греки називали їх Фосфор і Геспер, а древні римляни Люцифер і Веспер, відповідно.
+        <LineBreak></LineBreak>
+    </Paragraph>
+</FlowDocument>
